@@ -22,11 +22,11 @@
 
     <form id="act-form" action="#" method="post">
         <label for="">Nom de l'activité </label>
-        <input type="text">
+        <input type="text" minlength="3" maxlength="50" pattern="[a-zA-Z0-9 ]" required>
         <br>
 
         <label for="">Catégorie </label>
-        <select name="" id="">
+        <select name="" id="" required>
             <option value="">-- choisir -- </option>
             <option value="football">Football</option>
             <option value="natation">Natation</option>
@@ -35,15 +35,24 @@
         <br>
 
         <label for="">Description</label>
-        <textarea name="" id="" rows="5"></textarea>
+        <textarea name="" id="" rows="5" cols="50" maxlength="300" placeholder="Description de l'activité (max 300 caractères)." required></textarea>
         <br>
 
         <label for="">Jour</label>
-        <input type="date">
+        <select name="" id="">
+            <option value="">--</option>
+            <option value="lundi">Lundi</option>
+            <option value="mardi">Mardi</option>
+            <option value="mercredi">Mercredi</option>
+            <option value="jeudi">Jeudi</option>
+            <option value="vendredi">Vendredi</option>
+            <option value="samedi">Samedi</option>
+            <option value="dimanche">Dimanche</option>
+        </select>
         <br>
 
         <label for="">Horaire</label>
-        <input type="time">
+        <input type="text" placeholder="HH:MM -- HH:MM" pattern="([01][0-9]|2[0-3]):[0-5][0-9] -- ([01][0-9]|2[0-3]):[0-5][0-9]">
         <br>
 
         <label for="">Tarif(£/mois)</label>
@@ -52,7 +61,7 @@
         <br>
 
         <label for="">Nombre de places</label>
-        <input type="number">
+        <input type="number" min="1" max="200" step="1">
         <label for=""></label>
         <br>
 

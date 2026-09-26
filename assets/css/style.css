@@ -28,8 +28,12 @@ a{
     display: inline-block;
     width: 120px;
 }
+#act-form input{
+    margin-bottom: 5px;
+}
 
 #act-form textarea{
     vertical-align: middle;
+
 }
 

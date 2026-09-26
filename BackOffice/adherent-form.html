@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire d'activités</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+    <h1>Club Sportif - BackOffice</h1>
+    <hr>
+    <a href="#">Retour au site</a>|
+    <a href="#">Activités</a>|
+    <a href="#">Nouvelle activité</a>|
+    <a href="#">Adhérents</a>|
+    <a href="#">Nouvel adhérent</a>
+
+    <hr>
+    <h2>Formulaire adhérent</h2>
+
+    <form id="adh-form" action="#" method="post">
+        <label for="">Nom</label>
+        <input type="text" minlength="2" maxlength="30" pattern="[a-zA-Z -]+" required>
+        <br>
+
+        <label for="">Prénom</label>
+        <input type="text" minlength="2" maxlength="30" pattern="[a-zA-Z -]+" required>
+        <br>
+
+        <label for="">Email</label>
+        <input type="text" pattern=".+@(gmail\.com|outlook\.com|yahoo\.com|icloud\.com)" minlength="11" maxlength="255" required>
+        <br>
+
+        <label for="">Téléphone</label>
+        <input type="tel" pattern="[(0-9)]{8,15}" required>
+        <br>
+
+        <label for="">Activité</label>
+        <select name="" id="" required>
+            <option value="">-- choisir une activité-- </option>
+            <option value="football">Football</option>
+            <option value="natation">Natation</option>
+            <option value="fitness">Fitness</option>
+        </select>
+
+
+        <div id="adh-form-btns">
+            <input type="submit" value="Enregistrer">
+            <input type="reset" value="Annuler">
+        </div>
+
+
+    </form>
+</body>
+
+</html>

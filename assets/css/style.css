@@ -1,4 +1,4 @@
-body{
+#homepage-body{
     text-align: center;
 }
 table, th, td{
@@ -10,3 +10,26 @@ table, th, td{
     border: 1px solid black;
     border-collapse: collapse;
 }
+a{
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+#act-form{
+    display: inline-block;
+}
+
+#act-form-btns{
+    text-align: center;
+    margin: 10px;
+}
+
+#act-form label{
+    display: inline-block;
+    width: 120px;
+}
+
+#act-form textarea{
+    vertical-align: middle;
+}
+

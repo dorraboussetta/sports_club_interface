@@ -1,0 +1,12 @@
+body{
+    text-align: center;
+}
+table, th, td{
+    margin: auto;
+    padding: 3px;
+}
+
+.act-table, .act-table th, .act-table td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}

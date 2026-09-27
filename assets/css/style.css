@@ -1,39 +1,76 @@
-#homepage-body{
-    text-align: center;
-}
-table, th, td{
-    margin: auto;
-    padding: 5px;
-}
-
-a{
-    margin-left: 3px;
-    margin-right: 3px;
-}
-
-#act-form, #adh-form, #inscri-adh, .act-detail-del-form, .adh-detail-del-form{
-    display: inline-block;
-}
-
-#act-form-btns, #adh-form-btns, #inscri-adh-btns{
-    text-align: center;
-    margin: 10px;
+:root {
+  --color-primary: #0b5ed7;
+  --color-primary-dark: #094db8;
+  --color-navy: #0a2540;
+  --color-accent: #00c2a2;
+  --color-bg: #f5f7fa;
+  --color-white: #ffffff;
+  --color-text: #1b1b1b;
+  --color-muted: #6c757d;
+  --color-border: #ced4da;
+  --radius-card: 12px;
+  --radius-input: 8px;
+  --shadow-card: 0 4px 12px rgba(10, 37, 64, 0.08);
+  --font-heading: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  --font-body: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
 }
 
-#act-form label, #adh-form label, #inscri-adh label{
-    display: inline-block;
-    width: 120px;
+#homepage-body {
+  text-align: center;
 }
-#act-form input, #adh-form input, #inscri-adh input, #inscri-adh select{
-    margin-bottom: 5px;
-}
-
-#act-form textarea{
-    vertical-align: middle;
-
+table,
+th,
+td {
+  margin: auto;
+  padding: 5px;
 }
 
-#act-table-bo th, #act-table-bo td, #act-table-bo, #adh-table-list, #adh-table-list th, #adh-table-list td, .act-table, .act-table th, .act-table td{
-    border: 1px solid black;
-    border-collapse: collapse;
+a {
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+#act-form,
+#adh-form,
+#inscri-adh,
+.act-detail-del-form,
+.adh-detail-del-form {
+  display: inline-block;
+}
+
+#act-form-btns,
+#adh-form-btns,
+#inscri-adh-btns {
+  text-align: center;
+  margin: 10px;
+}
+
+#act-form label,
+#adh-form label,
+#inscri-adh label {
+  display: inline-block;
+  width: 120px;
+}
+#act-form input,
+#adh-form input,
+#inscri-adh input,
+#inscri-adh select {
+  margin-bottom: 5px;
+}
+
+#act-form textarea {
+  vertical-align: middle;
+}
+
+#act-table-bo th,
+#act-table-bo td,
+#act-table-bo,
+#adh-table-list,
+#adh-table-list th,
+#adh-table-list td,
+.act-table,
+.act-table th,
+.act-table td {
+  border: 1px solid black;
+  border-collapse: collapse;
 }

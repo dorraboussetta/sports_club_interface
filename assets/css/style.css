@@ -3,7 +3,7 @@
 }
 table, th, td{
     margin: auto;
-    padding: 3px;
+    padding: 5px;
 }
 
 .act-table, .act-table th, .act-table td{
@@ -35,5 +35,9 @@ a{
 #act-form textarea{
     vertical-align: middle;
 
+}
+
+#act-table-bo th, #act-table-bo td, #act-table-bo{
+    border: 1px solid black;
 }
 

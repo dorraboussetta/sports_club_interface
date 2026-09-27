@@ -15,7 +15,7 @@ a{
     margin-right: 3px;
 }
 
-#act-form, #adh-form, #inscri-adh, .act-detail-del-form{
+#act-form, #adh-form, #inscri-adh, .act-detail-del-form, .adh-detail-del-form{
     display: inline-block;
 }
 

@@ -1,116 +1,147 @@
 :root {
-  --color-primary: #0b5ed7;
-  --color-primary-dark: #094db8;
-  --color-navy: #0a2540;
-  --color-accent: #00c2a2;
-  --color-bg: #f5f7fa;
-  --color-white: #ffffff;
-  --color-text: #1b1b1b;
-  --color-muted: #6c757d;
-  --color-border: #ced4da;
-  --radius-card: 12px;
-  --radius-input: 8px;
-  --shadow-card: 0 4px 12px rgba(10, 37, 64, 0.08);
-  --font-heading: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
-  --font-body: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    --color-primary: #0b5ed7;
+    --color-primary-dark: #094db8;
+    --color-navy: #0a2540;
+    --color-accent: #00c2a2;
+    --color-bg: #f5f7fa;
+    --color-white: #ffffff;
+    --color-text: #1b1b1b;
+    --color-muted: #6c757d;
+    --color-border: #ced4da;
+    --radius-card: 12px;
+    --radius-input: 8px;
+    --shadow-card: 0 4px 12px rgba(10, 37, 64, 0.08);
+    --font-heading: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    --font-body: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
 }
 
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 
 body {
-  font-family: var(--font-body);
-  font-size: 16px;
-  line-height: 1.6;
-  color: var(--color-text);
-  background: var(--color-bg);
+    font-family: var(--font-body);
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--color-text);
+    background: var(--color-bg);
 }
 
-  
+
 h1,
 h2,
 h3 {
-  font-family: var(--font-heading);
-  color: var(--color-navy);
+    font-family: var(--font-heading);
+    color: var(--color-navy);
 }
-  
+
 h1 {
-  font-size: 2.5rem;
-  font-weight: 700;
-  line-height: 1.2;
-  margin-bottom: 1rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1rem;
 }
 
 
 h2 {
-  font-size: 1.75rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
 }
+
 h3 {
-  font-size: 1.25rem;
-  font-weight: 600;
-  margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
 }
+
 .muted {
-  color: var(--color-muted);
-  font-size: 0.875rem;
+    color: var(--color-muted);
+    font-size: 0.875rem;
 }
+
 .container {
-  max-width: 1140px;
-  margin: 0 auto;
-  padding: 0 1.5rem;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
 }
 
 
 
+.navbar {
+    background-color: var(--color-navy);
+    height: 64px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.navbar a:hover {
+    color: var(--color-accent);
+}
+
+.navbar-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 70px;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.navbar img {
+    height: 50px;
+}
 
 table,
 th,
 td {
-  margin: auto;
-  padding: 5px;
+    margin: auto;
+    padding: 5px;
 }
 
-a {
-  margin-left: 3px;
-  margin-right: 3px;
-}
+
 
 #act-form,
 #adh-form,
 #inscri-adh,
 .act-detail-del-form,
 .adh-detail-del-form {
-  display: inline-block;
+    display: inline-block;
 }
 
 #act-form-btns,
 #adh-form-btns,
 #inscri-adh-btns {
-  text-align: center;
-  margin: 10px;
+    text-align: center;
+    margin: 10px;
 }
 
 #act-form label,
 #adh-form label,
 #inscri-adh label {
-  display: inline-block;
-  width: 120px;
+    display: inline-block;
+    width: 120px;
 }
+
 #act-form input,
 #adh-form input,
 #inscri-adh input,
 #inscri-adh select {
-  margin-bottom: 5px;
+    margin-bottom: 5px;
 }
 
 #act-form textarea {
-  vertical-align: middle;
+    vertical-align: middle;
 }
 
 #act-table-bo th,
@@ -122,6 +153,6 @@ a {
 .act-table,
 .act-table th,
 .act-table td {
-  border: 1px solid black;
-  border-collapse: collapse;
+    border: 1px solid black;
+    border-collapse: collapse;
 }

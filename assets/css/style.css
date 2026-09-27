@@ -138,7 +138,10 @@ h3 {
 .icon {
   display: inline-block;
   transition: transform 0.25s ease;
+  align-self: flex-start;
 }
+
+
 .icon:hover {
   transform: scale(1.15) rotate(-6deg);
   transition: transform 0.25s ease;

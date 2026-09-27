@@ -15,7 +15,7 @@ a{
     margin-right: 3px;
 }
 
-#act-form, #adh-form, #inscri-adh{
+#act-form, #adh-form, #inscri-adh, .act-detail-del-form{
     display: inline-block;
 }
 
@@ -40,4 +40,3 @@ a{
 #act-table-bo th, #act-table-bo td, #act-table-bo{
     border: 1px solid black;
 }
-

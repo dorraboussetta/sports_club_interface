@@ -21,57 +21,59 @@
         <hr>
         <img src="../assets/img/logo.png" alt="club logo">
     </header>
+    <main>
+        <hr>
+        <h2>Inscription adhérent</h2>
 
-    <hr>
-    <h2>Inscription adhérent</h2>
+        <form id="inscri-adh" action="#" method="post">
+            <label for="">Nom</label>
+            <input type="text" minlength="2" maxlength="30" pattern="[a-zA-Z -]+" required>
+            <br>
 
-    <form id="inscri-adh" action="#" method="post">
-        <label for="">Nom</label>
-        <input type="text" minlength="2" maxlength="30" pattern="[a-zA-Z -]+" required>
-        <br>
+            <label for="">Prénom</label>
+            <input type="text" minlength="2" maxlength="30" pattern="[a-zA-Z -]+" required>
+            <br>
 
-        <label for="">Prénom</label>
-        <input type="text" minlength="2" maxlength="30" pattern="[a-zA-Z -]+" required>
-        <br>
+            <label for="">Email</label>
+            <input type="text" pattern=".+@(gmail\.com|outlook\.com|yahoo\.com|icloud\.com)" minlength="11"
+                maxlength="255" required>
+            <br>
 
-        <label for="">Email</label>
-        <input type="text" pattern=".+@(gmail\.com|outlook\.com|yahoo\.com|icloud\.com)" minlength="11" maxlength="255"
-            required>
-        <br>
+            <label for="">Téléphone</label>
+            <input type="tel" pattern="[(0-9)]{8,15}" required>
+            <br>
 
-        <label for="">Téléphone</label>
-        <input type="tel" pattern="[(0-9)]{8,15}" required>
-        <br>
+            <label for="">Activité souhaitée</label>
+            <select name="" id="" required>
+                <option value="">-- choisir une activité-- </option>
+                <option value="football">Football</option>
+                <option value="natation">Natation</option>
+                <option value="fitness">Fitness</option>
+            </select>
 
-        <label for="">Activité souhaitée</label>
-        <select name="" id="" required>
-            <option value="">-- choisir une activité-- </option>
-            <option value="football">Football</option>
-            <option value="natation">Natation</option>
-            <option value="fitness">Fitness</option>
-        </select>
+            <br>
+            <label for="">Durée</label>
+            <select name="" id="">
+                <option value="">-- Choisir une durée</option>
+                <option value="1">1 mois</option>
+                <option value="3">3 mois</option>
+                <option value="6">6 mois</option>
+                <option value="12">12 mois</option>
+            </select>
 
-        <br>
-        <label for="">Durée</label>
-        <select name="" id="">
-            <option value="">-- Choisir une durée</option>
-            <option value="1">1 mois</option>
-            <option value="3">3 mois</option>
-            <option value="6">6 mois</option>
-            <option value="12">12 mois</option>
-        </select>
-
-        <br>
-        <label for="">Tarif</label>
-        <input type="text" value="120 DT" readonly>
+            <br>
+            <label for="">Tarif</label>
+            <input type="text" value="120 DT" readonly>
 
 
-        <div id="inscri-adh-btns">
-            <input type="submit" value="Enregistrer">
-            <input type="reset" value="Annuler">
-        </div>
+            <div id="inscri-adh-btns">
+                <input type="submit" value="Enregistrer">
+                <input type="reset" value="Annuler">
+            </div>
 
-    </form>
+        </form>
+    </main>
+
 
     <footer>
         <a href="#">Acceuil</a>|

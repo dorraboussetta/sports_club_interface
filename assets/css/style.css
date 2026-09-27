@@ -6,10 +6,6 @@ table, th, td{
     padding: 5px;
 }
 
-.act-table, .act-table th, .act-table td{
-    border: 1px solid black;
-    border-collapse: collapse;
-}
 a{
     margin-left: 3px;
     margin-right: 3px;
@@ -37,6 +33,7 @@ a{
 
 }
 
-#act-table-bo th, #act-table-bo td, #act-table-bo{
+#act-table-bo th, #act-table-bo td, #act-table-bo, #adh-table-list, #adh-table-list th, #adh-table-list td, .act-table, .act-table th, .act-table td{
     border: 1px solid black;
+    border-collapse: collapse;
 }

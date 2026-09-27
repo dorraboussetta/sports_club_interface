@@ -15,20 +15,20 @@ a{
     margin-right: 3px;
 }
 
-#act-form, #adh-form{
+#act-form, #adh-form, #inscri-adh{
     display: inline-block;
 }
 
-#act-form-btns, #adh-form-btns{
+#act-form-btns, #adh-form-btns, #inscri-adh-btns{
     text-align: center;
     margin: 10px;
 }
 
-#act-form label, #adh-form label{
+#act-form label, #adh-form label, #inscri-adh label{
     display: inline-block;
     width: 120px;
 }
-#act-form input, #adh-form input{
+#act-form input, #adh-form input, #inscri-adh input, #inscri-adh select{
     margin-bottom: 5px;
 }
 

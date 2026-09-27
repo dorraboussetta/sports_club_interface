@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription adhérent</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Club Sportif</h1>
+        <hr>
+        <nav>
+            <a href="#">Acceuil</a> |
+            <a href="#">Activités</a> |
+            <a href="#">À Propos</a> |
+            <a href="#">Inscription</a>
+        </nav>
+        <hr>
+        <img src="../assets/img/logo.png" alt="club logo">
+    </header>
+
+    <hr>
+    <h2>Inscription adhérent</h2>
+
+    <form id="inscri-adh" action="#" method="post">
+        <label for="">Nom</label>
+        <input type="text" minlength="2" maxlength="30" pattern="[a-zA-Z -]+" required>
+        <br>
+
+        <label for="">Prénom</label>
+        <input type="text" minlength="2" maxlength="30" pattern="[a-zA-Z -]+" required>
+        <br>
+
+        <label for="">Email</label>
+        <input type="text" pattern=".+@(gmail\.com|outlook\.com|yahoo\.com|icloud\.com)" minlength="11" maxlength="255"
+            required>
+        <br>
+
+        <label for="">Téléphone</label>
+        <input type="tel" pattern="[(0-9)]{8,15}" required>
+        <br>
+
+        <label for="">Activité souhaitée</label>
+        <select name="" id="" required>
+            <option value="">-- choisir une activité-- </option>
+            <option value="football">Football</option>
+            <option value="natation">Natation</option>
+            <option value="fitness">Fitness</option>
+        </select>
+
+        <br>
+        <label for="">Durée</label>
+        <select name="" id="">
+            <option value="">-- Choisir une durée</option>
+            <option value="1">1 mois</option>
+            <option value="3">3 mois</option>
+            <option value="6">6 mois</option>
+            <option value="12">12 mois</option>
+        </select>
+
+        <br>
+        <label for="">Tarif</label>
+        <input type="text" value="120 DT" readonly>
+
+
+        <div id="inscri-adh-btns">
+            <input type="submit" value="Enregistrer">
+            <input type="reset" value="Annuler">
+        </div>
+
+    </form>
+
+    <footer>
+        <a href="#">Acceuil</a>|
+        <a href="#">Activités</a>|
+        <a href="#">Inscription</a>
+        <p>© Club Sportif - Tous droits réservés</p>
+    </footer>
+</body>
+
+</html>

@@ -168,6 +168,38 @@ h3 {
   color:#856404; 
 }
 
+.btn{
+  display: inline-block;
+  border: none;
+  border-radius: 8px;
+  padding: 0.75rem 1.5rem;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+}
+
+.btn-primary{
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.btn-primary:hover{
+  background: var(--color-primary-dark);
+}
+
+.btn-secondary{
+  background: transparent;
+  border: 2px solid var(--color-primary);
+  color: var(--color-primary);
+}
+
+form{
+  display: inline-block;
+}
+
 
 table,
 th,
@@ -176,38 +208,6 @@ td {
   padding: 5px;
 }
 
-#act-form,
-#adh-form,
-#inscri-adh,
-.act-detail-del-form,
-.adh-detail-del-form {
-  display: inline-block;
-}
-
-#act-form-btns,
-#adh-form-btns,
-#inscri-adh-btns {
-  text-align: center;
-  margin: 10px;
-}
-
-#act-form label,
-#adh-form label,
-#inscri-adh label {
-  display: inline-block;
-  width: 120px;
-}
-
-#act-form input,
-#adh-form input,
-#inscri-adh input,
-#inscri-adh select {
-  margin-bottom: 5px;
-}
-
-#act-form textarea {
-  vertical-align: middle;
-}
 
 #act-table-bo th,
 #act-table-bo td,

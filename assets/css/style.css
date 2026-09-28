@@ -168,6 +168,11 @@ h3 {
   color:#856404; 
 }
 
+.table-cell-badge{
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
 .btn{
   display: inline-block;
   border: none;
@@ -242,24 +247,26 @@ form{
   margin: 0px 5px 5px 5px;
 }
 
-
-table,
-th,
-td {
-  margin: auto;
-  padding: 5px;
-}
-
-
-#act-table-bo th,
-#act-table-bo td,
-#act-table-bo,
-#adh-table-list,
-#adh-table-list th,
-#adh-table-list td,
-.act-table,
-.act-table th,
-.act-table td {
-  border: 1px solid black;
+.table-liste, .table-inscrits {
+  width: 100%;
   border-collapse: collapse;
+
 }
+
+th {
+  background: var(--color-navy);
+  color: #fff;
+  text-align: left;
+  padding: 0.75rem 1rem;
+}
+
+td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #E9ECEF;
+}
+
+tr:hover td { 
+  background:#F1F5FB; 
+} 
+
+

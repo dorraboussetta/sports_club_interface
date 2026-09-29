@@ -273,9 +273,6 @@ h3 {
   margin: 0px 5px 5px 5px;
 }
 
-.form-row{
-
-}
 
 .table-liste,
 .table-inscrits {
@@ -441,9 +438,17 @@ footer {
 }
 
 @media (max-width: 600px) {
-  .navbar-links {
+  /* .navbar-links {
     flex-direction: column;
     gap: 0.75rem;
+  } */
+
+  .navbar{
+    height: 70px;
+  }
+
+  .navbar-inner{
+    padding: 0 20px;
   }
 
   .grid-cards{
@@ -471,3 +476,36 @@ footer {
 .act-card, .adh-card{
   animation: fadeInUp 0.4s ease both;
 }
+
+@media (max-width: 768px) {
+  .backoffice-layout{
+    flex-direction: column;
+  }
+
+  .backoffice-layout .sidebar{
+    width: 100%;
+    padding: 1rem 0;
+  }
+
+  .backoffice-layout .sidebar .sidebar-nav{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+  }
+
+  .backoffice-layout .sidebar .sidebar-nav a{
+    padding: 0.5rem 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  /* .navbar-links{
+    flex-direction: column;
+    gap: 0.75rem;
+  } */
+
+  .grid-cards{
+    grid-template-columns: 1fr;
+  }
+}
+

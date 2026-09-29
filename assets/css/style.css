@@ -201,6 +201,11 @@ h3 {
   color: var(--color-primary);
 }
 
+.about-btn{
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .form-btn-div{
   display: flex;
   justify-content: center;
@@ -268,5 +273,100 @@ td {
 tr:hover td { 
   background:#F1F5FB; 
 } 
+
+.about{
+  padding: 4rem 0;
+}
+
+.about-card{
+  background: var(--color-white);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card);
+  padding: 2rem;
+}
+
+.about-text{
+  color: var(--color-text);
+  line-height: 1.8;
+  text-align: justify;
+  margin-bottom: 1rem;
+}
+
+.about-stats{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.stat-card{
+  background: #F8FAFC;
+  border-radius: var(--radius-card);
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.stat-number{
+  color: var(--color-primary);
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.stat-label{
+  color: var(--color-muted);
+  font-weight: 600;
+}
+
+.about-action{
+  text-align: center;
+}
+
+footer{
+  background-color: var(--color-navy);
+  color: var(--color-white);
+  margin-top: 5rem;
+  padding: 2.5rem 0;
+}
+
+.footer-container{
+  text-align: center;
+}
+
+.footer-links{
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem; 
+
+}
+
+.footer-links a {
+  color:  rgba(255,255,255,0.85);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.footer-links a:hover{
+  color: var(--color-accent);
+}
+
+.footer-contact{
+  margin-bottom: 1.5rem;
+  color:  rgba(255,255,255,0.75);
+}
+
+.footer-contact p{
+  margin-bottom: 0.5rem;
+}
+
+.footer-bottom{
+  border-top: 1px solid rgba(255,255,255,0.15);
+  padding-top: 1rem;
+  color: rgba(255,255,255,0.7); 
+  font-size: 0.9rem;
+}
+
 
 

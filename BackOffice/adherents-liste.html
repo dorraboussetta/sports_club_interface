@@ -9,90 +9,108 @@
 </head>
 
 <body>
-    <header>
-        <h1>Club Sportif - BackOffice</h1>
-        <hr>
-        <a href="#">Retour au site</a>|
-        <a href="#">Activités</a>|
-        <a href="#">Nouvelle activité</a>|
-        <a href="#">Adhérents</a>|
-        <a href="#">Nouvel adhérent</a>
-    </header>
+    <nav class="backoffice-navbar navbar">
+        <div class="navbar-inner">
+            <h4>Club Sportif</h4>
+            <div class="navbar-links return-link">
+                <a href="#">Retour au site</a>
+            </div>
+        </div>
+    </nav>
 
-    <main>
+    <div class="backoffice-layout">
+        <div class="sidebar">
+            <div class="sidebar-brand ">
+                <h4>BackOffice</h4>
+            </div>
 
-        <h2>Liste d'adhérents</h2>
-        <table class="table-inscrits">
-            <tr>
-                <th>ID</th>
-                <th>Nom</th>
-                <th>Prénom</th>
-                <th>Email</th>
-                <th>Activité(s)</th>
-                <th>Durée</th>
-                <th>Tarif</th>
-            </tr>
+            <div class="sidebar-nav">
+                <a href="#">Activités</a>
+                <a href="#">Nouvelle activité</a>
+                <a href="#">Adhérents</a>
+                <a href="#">Nouvel adhérent</a>
+            </div>
 
-            <tr>
-                <td>
-                    1970
-                </td>
+        </div>
 
-                <td>
-                    Ben Salem
-                </td>
+        <div class="main-content">
 
-                <td>
-                    Yassine
-                </td>
+            <h2>Liste d'adhérents</h2>
+            <div class="container">
+                <table class="table-inscrits">
+                    <tr>
+                        <th>ID</th>
+                        <th>Nom</th>
+                        <th>Prénom</th>
+                        <th>Email</th>
+                        <th>Activité(s)</th>
+                        <th>Durée</th>
+                        <th>Tarif</th>
+                    </tr>
 
-                <td>
-                    yassine.bensalem@gmail.com
-                </td>
-                <td>
-                    Football, Fitness
-                </td>
-                <td>
-                    6 mois
-                </td>
+                    <tr>
+                        <td>
+                            1970
+                        </td>
 
-                <td>
-                    100 DT / mois
-                </td>
-            </tr>
+                        <td>
+                            Ben Salem
+                        </td>
 
-            <tr>
-                <td>
-                    1691
-                </td>
+                        <td>
+                            Yassine
+                        </td>
 
-                <td>
-                    Trabelsi
-                </td>
+                        <td>
+                            yassine.bensalem@gmail.com
+                        </td>
+                        <td>
+                            Football, Fitness
+                        </td>
+                        <td>
+                            6 mois
+                        </td>
 
-                <td>
-                    Mariem
-                </td>
+                        <td>
+                            100 DT / mois
+                        </td>
+                    </tr>
 
-                <td>
-                    mariem.trabelsi@outlook.com
-                </td>
+                    <tr>
+                        <td>
+                            1691
+                        </td>
 
-                <td>
-                    Natation
-                </td>
+                        <td>
+                            Trabelsi
+                        </td>
 
-                <td>
-                    3 mois
-                </td>
+                        <td>
+                            Mariem
+                        </td>
 
-                <td>
-                    50 DT / mois
-                </td>
-            </tr>
-        </table>
+                        <td>
+                            mariem.trabelsi@outlook.com
+                        </td>
 
-    </main>
+                        <td>
+                            Natation
+                        </td>
+
+                        <td>
+                            3 mois
+                        </td>
+
+                        <td>
+                            50 DT / mois
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+
+        </div>
+    </div>
 
 </body>
 

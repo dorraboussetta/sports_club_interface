@@ -9,100 +9,111 @@
 </head>
 
 <body>
-    <header>
-        <h1>Club Sportif - BackOffice</h1>
-        <hr>
-        <a href="#">Retour au site</a>|
-        <a href="#">Activités</a>|
-        <a href="#">Nouvelle activité</a>|
-        <a href="#">Adhérents</a>|
-        <a href="#">Nouvel adhérent</a>
-    </header>
+    <nav class="backoffice-navbar navbar">
+        <div class="navbar-inner">
+            <h4>Club Sportif</h4>
+            <div class="navbar-links return-link">
+                <a href="#">Retour au site</a>
+            </div>
+        </div>
+    </nav>
+    <div class="backoffice-layout">
+        <div class="sidebar">
+            <div class="sidebar-brand ">
+                <h4>BackOffice</h4>
+            </div>
 
-    <main>
+            <div class="sidebar-nav">
+                <a href="#">Activités</a>
+                <a href="#">Nouvelle activité</a>
+                <a href="#">Adhérents</a>
+                <a href="#">Nouvel adhérent</a>
+            </div>
 
-        <h2>Détails d'adhérents</h2>
-
-        <div class="adh-card">
-            <p>
-                <b>ID :</b> 1970
-            </p>
-
-            <p>
-                <b>Nom :</b> Ben Salem
-            </p>
-
-            <p>
-                <b>Prénom :</b> Yassine
-            </p>
-
-            <p>
-                <b>Email :</b> yassine.bensalem@gmail.com
-            </p>
-            <p>
-                <b>Activité(s) :</b> Football, Fitness
-            </p>
-            <p>
-                <b>Durée :</b> 6 mois
-            </p>
-
-            <p>
-                <b>Tarif :</b> 100 DT / mois
-            </p>
-
-            <form action="#" method="get">
-                <input type="hidden">
-                <button class="btn btn-primary">Modifier</button>
-            </form>
-            <form action="#" method="post">
-                <input type="hidden">
-                <button class="btn btn-secondary" >Supprimer</button>
-            </form>
         </div>
 
-        <hr>
-        <div class="adh-card">
+        <div class="main-content">
 
-            <p>
-               <b>ID :</b> 1691 
-            </p>
+            <h2>Détails d'adhérents</h2>
+            <div class="container">
+                <div class="adh-detail-grid">
+                    <div class="adh-detail-card">
+                        <p>
+                            <b>ID :</b> 1970
+                        </p>
 
-            <p>
-               <b>Nom :</b>  Trabelsi
-            </p>
-            
-            <p>
-                <b>Prénom :</b> Mariem
-            </p>
-            
-            <p>
-                <b>Email :</b> mariem.trabelsi@outlook.com
-            </p>
+                        <p>
+                            <b>Nom :</b> Ben Salem
+                        </p>
 
-            <p>
-               <b>Activité(s) :</b> Natation 
-            </p>
-            
-            <p>
-                <b>Durée :</b> 3 mois
-            </p>
-            
-            <p>
-                <b>Tarif :</b> 50 DT / mois
-            </p>
-            
+                        <p>
+                            <b>Prénom :</b> Yassine
+                        </p>
 
-            <form action="#" method="get">
-                <input type="hidden">
-                <button class="btn btn-primary">Modifier</button>
-            </form>
-            <form action="#" method="post">
-                <input type="hidden">
-                <button class="btn btn-secondary" >Supprimer</button>
-            </form>
+                        <p>
+                            <b>Email :</b> yassine.bensalem@gmail.com
+                        </p>
+                        <p>
+                            <b>Activité(s) :</b> Football, Fitness
+                        </p>
+                        <p>
+                            <b>Durée :</b> 6 mois
+                        </p>
+
+                        <p>
+                            <b>Tarif :</b> 100 DT / mois
+                        </p>
+
+                        <div class="form-btn-div">
+                            <a href="#" class="btn btn-primary">Modifier</a>
+                            <a href="#" class="btn btn-danger">Supprimer</a>
+                        </div>
+                    </div>
+
+                    <div class="adh-detail-card">
+
+                        <p>
+                            <b>ID :</b> 1691
+                        </p>
+
+                        <p>
+                            <b>Nom :</b> Trabelsi
+                        </p>
+
+                        <p>
+                            <b>Prénom :</b> Mariem
+                        </p>
+
+                        <p>
+                            <b>Email :</b> mariem.trabelsi@outlook.com
+                        </p>
+
+                        <p>
+                            <b>Activité(s) :</b> Natation
+                        </p>
+
+                        <p>
+                            <b>Durée :</b> 3 mois
+                        </p>
+
+                        <p>
+                            <b>Tarif :</b> 50 DT / mois
+                        </p>
+
+
+                        <div class="form-btn-div">
+                            <a href="#" class="btn btn-primary">Modifier</a>
+                            <a href="#" class="btn btn-danger">Supprimer</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
         </div>
 
-    </main>
+    </div>
 
 </body>
 

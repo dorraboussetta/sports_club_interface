@@ -116,7 +116,7 @@ h3 {
   margin-bottom: 2rem;
 }
 
-.act-list-grid{
+.act-list-grid, .adh-detail-grid{
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
   gap: 15px;
@@ -131,7 +131,7 @@ h3 {
 }
 
 .act-card,
-.act-list-card, .act-detail-card  {
+.act-list-card, .act-detail-card, .adh-detail-card{
   background-color: var(--color-white);
   border-radius: var(--radius-card);
   box-shadow: var(--shadow-card);
@@ -141,14 +141,14 @@ h3 {
     box-shadow 0.2s ease;
 }
 
-.act-list-card, .act-detail-card {
+.act-list-card, .act-detail-card, .adh-detail-card {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
 .act-card:hover,
-.act-list-card:hover, .act-detail-card:hover {
+.act-list-card:hover, .act-detail-card:hover, .adh-detail-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 8px 20px rgba(10, 37, 64, 0.12);
 }

@@ -9,101 +9,97 @@
 </head>
 
 <body>
-    <header>
-        <h1>Club Sportif - BackOffice</h1>
-        <hr>
-        <a href="#">Retour au site</a>|
-        <a href="#">Activités</a>|
-        <a href="#">Nouvelle activité</a>|
-        <a href="#">Adhérents</a>|
-        <a href="#">Nouvel adhérent</a>
-    </header>
+    <nav class="backoffice-navbar navbar">
+        <div class="navbar-inner">
+            <h4>Club Sportif</h4>
+            <div class="navbar-links return-link">
+                <a href="#">Retour au site</a>
+            </div>
+        </div>
+    </nav>
 
-    <main>
+    <div class="backoffice-layout">
+        <div class="sidebar">
+            <div class="sidebar-brand ">
+                <h4>BackOffice</h4>
+            </div>
 
-        <h2>Liste d'activités</h2>
+            <div class="sidebar-nav">
+                <a href="#">Activités</a>
+                <a href="#">Nouvelle activité</a>
+                <a href="#">Adhérents</a>
+                <a href="#">Nouvel adhérent</a>
+            </div>
 
-        <table class="table-liste">
-            <tr>
-                <th>Activité</th>
-                <th>Résumé</th>
-                <th>Niveau</th>
-                <th>Entraîneur</th>
-                <th>Horaires</th>
-                <th>Lieu</th>
-                <th>Durée</th>
-                <th>Tarif</th>
-                <th>Disponibilité</th>
-                <th>Équipement conseillé</th>
-                <th>Description</th>
-            </tr>
+        </div>
+        <div class="main-content">
 
-            <tr>
-                <td>Football</td>
-                <td>Sports de ballon</td>
-                <td>Débutant à intermédiaire</td>
-                <td>Coach Ahmed</td>
-                <td>Mardi et jeudi, de 18h00 à 19h30</td>
-                <td>Terrain extérieur du club</td>
-                <td>1h30 par séance</td>
-                <td>40 DT / mois</td>
-                <td>
-                    <p class="badge badge-paye">Disponible</p>
-                </td>
-                <td>
-                    <ol>
-                        <li>Tenue de sport</li>
-                        <li>Chaussures adaptées</li>
-                        <li>Bouteille d’eau</li>
-                    </ol>
-                </td>
-                <td>Les séances comprennent un échauffement, des exercices techniques, des passes, des tirs, du travail
-                    collectif et des petits matchs. L’objectif est d’améliorer la technique, l’endurance et le jeu en
-                    équipe.
-                </td>
+            <h2>Liste d'activités</h2>
+            <div class="container">
+                <table class="table-liste">
+                    <tr>
+                        <th>Activité</th>
+                        <th>Résumé</th>
+                        <th>Niveau</th>
+                        <th>Entraîneur</th>
+                        <th>Horaires</th>
+                        <th>Lieu</th>
+                        <th>Durée</th>
+                        <th>Tarif</th>
+                        <th>Disponibilité</th>
+                    </tr>
 
-            </tr>
+                    <tr>
+                        <td>Football</td>
+                        <td>Sports de ballon</td>
+                        <td>Débutant à intermédiaire</td>
+                        <td>Coach Ahmed</td>
+                        <td>Mardi et jeudi, de 18h00 à 19h30</td>
+                        <td>Terrain extérieur du club</td>
+                        <td>1h30 par séance</td>
+                        <td>40 DT / mois</td>
+                        <td>
+                            <p class="badge badge-paye">Disponible</p>
+                        </td>
 
-            <tr>
-                <td>Natation</td>
-                <td>Sports aquatiques</td>
-                <td>Tous niveaux</td>
-                <td>Coach Sara</td>
-                <td>Lundi, mercredi et samedi, de 17h00 à 18h00</td>
-                <td>Piscine du club</td>
-                <td>1 heure par séance</td>
-                <td>50 DT / mois</td>
-                <td>
-                    <p class="badge badge-paye">Disponible</p>
-                </td>
-                <td>Maillot de bain, bonnet, lunettes de natation et serviette</td>
-                <td>Les séances permettent d’apprendre ou de perfectionner les différentes techniques de nage. Elles
-                    comprennent des exercices de respiration, de coordination, d’endurance et de technique dans l’eau.
-                </td>
+                    </tr>
 
-            </tr>
+                    <tr>
+                        <td>Natation</td>
+                        <td>Sports aquatiques</td>
+                        <td>Tous niveaux</td>
+                        <td>Coach Sara</td>
+                        <td>Lundi, mercredi et samedi, de 17h00 à 18h00</td>
+                        <td>Piscine du club</td>
+                        <td>1 heure par séance</td>
+                        <td>50 DT / mois</td>
+                        <td>
+                            <p class="badge badge-paye">Disponible</p>
+                        </td>
 
-            <tr>
-                <td>Fitness</td>
-                <td>Sport individuel</td>
-                <td>Débutant à avancé</td>
-                <td>Coach Yasmine</td>
-                <td>Du lundi au vendredi, de 18h30 à 20h00</td>
-                <td>Salle de musculation du club</td>
-                <td>1h30 par séance</td>
-                <td>60 DT / mois</td>
-                <td>
-                    <p class="badge badge-attente">Places limitées</p>
-                </td>
-                <td>Tenue de sport, chaussures de salle, serviette et bouteille d’eau</td>
-                <td>Les séances peuvent inclure du cardio, du renforcement musculaire, des exercices avec poids et des
-                    exercices au poids du corps. Les exercices peuvent être adaptés au niveau de chaque adhérent.
-                </td>
+                    </tr>
 
-            </tr>
-        </table>
+                    <tr>
+                        <td>Fitness</td>
+                        <td>Sport individuel</td>
+                        <td>Débutant à avancé</td>
+                        <td>Coach Yasmine</td>
+                        <td>Du lundi au vendredi, de 18h30 à 20h00</td>
+                        <td>Salle de musculation du club</td>
+                        <td>1h30 par séance</td>
+                        <td>60 DT / mois</td>
+                        <td>
+                            <p class="badge badge-attente">Places limitées</p>
+                        </td>
 
-    </main>
+                    </tr>
+                </table>
+            </div>
+
+
+
+        </div>
+    </div>
 
     <footer>
         <a href="#">Acceuil</a>|

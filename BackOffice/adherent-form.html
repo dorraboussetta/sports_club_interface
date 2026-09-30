@@ -9,54 +9,71 @@
 </head>
 
 <body>
-    <header>
-        <h1>Club Sportif - BackOffice</h1>
-        <hr>
-        <a href="#">Retour au site</a>|
-        <a href="#">Activités</a>|
-        <a href="#">Nouvelle activité</a>|
-        <a href="#">Adhérents</a>|
-        <a href="#">Nouvel adhérent</a>
-    </header>
-    <hr>
-    <h2>Formulaire adhérent</h2>
+    <nav class="backoffice-navbar navbar">
+        <div class="navbar-inner">
+            <h4>Club Sportif</h4>
+            <div class="navbar-links return-link">
+                <a href="#">Retour au site</a>
+            </div>
+        </div>
+    </nav>
 
-    <div class="form-container">
-        <form class="form-card" action="#" method="post">
-            <label for="">Nom</label>
-            <input type="text" minlength="2" maxlength="30" pattern="[a-zA-Z -]+" required>
-            <br>
-
-            <label for="">Prénom</label>
-            <input type="text" minlength="2" maxlength="30" pattern="[a-zA-Z -]+" required>
-            <br>
-
-            <label for="">Email</label>
-            <input type="text" pattern=".+@(gmail\.com|outlook\.com|yahoo\.com|icloud\.com)" minlength="11"
-                maxlength="255" required>
-            <br>
-
-            <label for="">Téléphone</label>
-            <input type="tel" pattern="[(0-9)]{8,15}" required>
-            <br>
-
-            <label for="">Activité</label>
-            <select name="" id="" required>
-                <option value="">-- choisir une activité-- </option>
-                <option value="football">Football</option>
-                <option value="natation">Natation</option>
-                <option value="fitness">Fitness</option>
-            </select>
-
-
-            <div class="form-btn-div">
-                <button type="submit" class="btn btn-primary">Enregistrer</button>
-                <a class="btn btn-secondary">Annuler</a>
+    <div class="backoffice-layout">
+        <div class="sidebar">
+            <div class="sidebar-brand ">
+                <h4>BackOffice</h4>
             </div>
 
+            <div class="sidebar-nav">
+                <a href="#">Activités</a>
+                <a href="#">Nouvelle activité</a>
+                <a href="#">Adhérents</a>
+                <a href="#">Nouvel adhérent</a>
+            </div>
 
-        </form>
-    </div>
+        </div>
+        <div class="main-content">
+            <h2>Formulaire adhérent</h2>
+            <div class="form-container">
+                <form class="form-card" action="#" method="post">
+                    <label for="">Nom</label>
+                    <input type="text" minlength="2" maxlength="30" pattern="[a-zA-Z -]+" required>
+                    <br>
+
+                    <label for="">Prénom</label>
+                    <input type="text" minlength="2" maxlength="30" pattern="[a-zA-Z -]+" required>
+                    <br>
+
+                    <label for="">Email</label>
+                    <input type="text" pattern=".+@(gmail\.com|outlook\.com|yahoo\.com|icloud\.com)" minlength="11"
+                        maxlength="255" required>
+                    <br>
+
+                    <label for="">Téléphone</label>
+                    <input type="tel" pattern="[(0-9)]{8,15}" required>
+                    <br>
+
+                    <label for="">Activité</label>
+                    <select name="" id="" required>
+                        <option value="">-- choisir une activité-- </option>
+                        <option value="football">Football</option>
+                        <option value="natation">Natation</option>
+                        <option value="fitness">Fitness</option>
+                    </select>
+
+
+                    <div class="form-btn-div">
+                        <button type="submit" class="btn btn-primary">Enregistrer</button>
+                        <a class="btn btn-secondary">Annuler</a>
+                    </div>
+
+
+                </form>
+            </div>
+        </div>
+        </div>
+
+
 
 </body>
 

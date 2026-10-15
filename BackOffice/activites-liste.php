@@ -1,7 +1,7 @@
 <?php
  
 
-$activities = [ 
+$activites = [ 
     [ 
         'id' => 1, 
         'nom' => 'Football', 
@@ -97,6 +97,29 @@ $activities = [
 
         </div>
         <div class="main-content">
+            <h2>Statistiques</h2>
+            <div class="container">
+                <table class="table-liste">
+                    <tr>
+                        <th>Nombre d'activités</th>
+                        <th>Capacité d'acceuil totale</th>
+                    </tr>
+
+                    <tr>
+                        <td> 
+                            <?php
+                                echo count($activites); 
+                            ?>
+                        </td>
+
+                        <td>
+                            <?php
+                                echo array_sum(array_column($activites, 'places')); 
+                            ?>
+                        </td>
+                    </tr>
+                </table>
+            </div>
 
             <h2>Liste d'activités</h2>
             <div class="container">
@@ -107,11 +130,12 @@ $activities = [
                         <th>Jour</th>
                         <th>Heure</th>
                         <th>Tarif</th>
+                        <th>Places</th>
                         <th>Disponibilité</th>
                     </tr>
 
                     <?php
-                    foreach ($activities as $activite) {
+                    foreach ($activites as $activite) {
 
                         if (intval($activite['tarif'])>30) {
                             $tarif = "{$activite['tarif']} <p> <strong> (Premium) </strong> </p>"; 
@@ -125,6 +149,7 @@ $activities = [
                         ."<td> {$activite['jour']}</td>"
                         ."<td> {$activite['heure']}</td>"
                         ."<td> $tarif</td>"
+                        ."<td> {$activite['places']}</td>"
                         ."<td> <p class='badge {$activite['badge']}'>{$activite['Disponibilite']}</p></td>"
                         ."</tr>"; 
                     }; 

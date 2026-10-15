@@ -1,10 +1,12 @@
 <?php
  
 
+
 $activites = [ 
     [ 
         'id' => 1, 
-        'nom' => 'Football', 
+        'nom' => 'Football',
+        'icon' => '&#9917;',
         'categorie' => 'Sports de ballon', 
         'jour' => 'Samedi', 
         'heure' => '10h00 - 12h00', 
@@ -17,20 +19,22 @@ $activites = [
     ], 
     [ 
         'id' => 2, 
-        'nom' => 'Natation', 
+        'nom' => 'Natation',
+        'icon' => '&#127946;',
         'categorie' => 'Sports aquatiques', 
         'jour' => 'Mardi et jeudi', 
         'heure' => '18h00 - 19h30', 
         'tarif' => '25 EUR', 
         'Disponibilite' => 'Disponible', 
-        'badge' => 'badge-paye' , 
+        'badge' => 'badge-paye', 
         'places' => 22,  
         'statut' => 'publie', 
         'promotion' => true  
     ], 
     [ 
         'id' => 3, 
-        'nom' => 'Fitness', 
+        'nom' => 'Fitness',
+        'icon' => '&#127947;',
         'categorie' => 'Sport individuel', 
         'jour' => 'Du lundi au vendredi', 
         'heure' => '07h00 - 21h00', 
@@ -43,7 +47,8 @@ $activites = [
     ], 
     [ 
         'id' => 4, 
-        'nom' => 'Basketball', 
+        'nom' => 'Basketball',
+        'icon' => '&#127936;',
         'categorie' => 'Sports de ballon', 
         'jour' => 'Mercredi', 
         'heure' => '16h00 - 18h00', 
@@ -55,6 +60,7 @@ $activites = [
         'promotion' => false  
     ] 
 ];
+
 
 
 

@@ -2,63 +2,67 @@
  
 
 
-$activites = [ 
-    [ 
-        'id' => 1, 
+$activites = [
+    [
+        'id' => 1,
         'nom' => 'Football',
         'icon' => '&#9917;',
-        'categorie' => 'Sports de ballon', 
-        'jour' => 'Samedi', 
-        'heure' => '10h00 - 12h00', 
-        'tarif' => '30 EUR', 
-        'Disponibilite' => 'Disponible', 
-        'badge' => 'badge-paye', 
-        'places' => 25,  
-        'statut' => 'publie', 
-        'promotion' => false  
-    ], 
-    [ 
-        'id' => 2, 
+        'description' => 'Améliorez votre technique, votre endurance et votre esprit d’équipe à travers des entraînements dynamiques et des matchs collectifs.',
+        'categorie' => 'Sports de ballon',
+        'jour' => 'Samedi',
+        'heure' => '10h00 - 12h00',
+        'tarif' => '30 EUR',
+        'Disponibilite' => 'Disponible',
+        'badge' => 'badge-paye',
+        'places' => 25,
+        'statut' => 'publie',
+        'promotion' => false
+    ],
+    [
+        'id' => 2,
         'nom' => 'Natation',
         'icon' => '&#127946;',
-        'categorie' => 'Sports aquatiques', 
-        'jour' => 'Mardi et jeudi', 
-        'heure' => '18h00 - 19h30', 
-        'tarif' => '25 EUR', 
-        'Disponibilite' => 'Disponible', 
-        'badge' => 'badge-paye', 
-        'places' => 22,  
-        'statut' => 'publie', 
-        'promotion' => true  
-    ], 
-    [ 
-        'id' => 3, 
+        'description' => 'Développez votre endurance et perfectionnez vos techniques de nage grâce à des séances adaptées à différents niveaux.',
+        'categorie' => 'Sports aquatiques',
+        'jour' => 'Mardi et jeudi',
+        'heure' => '18h00 - 19h30',
+        'tarif' => '25 EUR',
+        'Disponibilite' => 'Disponible',
+        'badge' => 'badge-paye',
+        'places' => 22,
+        'statut' => 'publie',
+        'promotion' => true
+    ],
+    [
+        'id' => 3,
         'nom' => 'Fitness',
         'icon' => '&#127947;',
-        'categorie' => 'Sport individuel', 
-        'jour' => 'Du lundi au vendredi', 
-        'heure' => '07h00 - 21h00', 
-        'tarif' => '35 EUR', 
-        'Disponibilite' => 'Places limitées', 
-        'badge' => 'badge-attente', 
-        'places' => 15,  
-        'statut' => 'brouillon', 
-        'promotion' => false  
-    ], 
-    [ 
-        'id' => 4, 
+        'description' => 'Renforcez vos muscles, améliorez votre condition physique et gagnez en énergie grâce à des exercices variés et motivants.',
+        'categorie' => 'Sport individuel',
+        'jour' => 'Du lundi au vendredi',
+        'heure' => '07h00 - 21h00',
+        'tarif' => '35 EUR',
+        'Disponibilite' => 'Places limitées',
+        'badge' => 'badge-attente',
+        'places' => 15,
+        'statut' => 'brouillon',
+        'promotion' => false
+    ],
+    [
+        'id' => 4,
         'nom' => 'Basketball',
         'icon' => '&#127936;',
-        'categorie' => 'Sports de ballon', 
-        'jour' => 'Mercredi', 
-        'heure' => '16h00 - 18h00', 
-        'tarif' => '30 EUR', 
-        'Disponibilite' => 'Disponible', 
+        'description' => 'Perfectionnez vos tirs, vos passes et votre coordination tout en développant votre esprit d’équipe lors de séances collectives.',
+        'categorie' => 'Sports de ballon',
+        'jour' => 'Mercredi',
+        'heure' => '16h00 - 18h00',
+        'tarif' => '30 EUR',
+        'Disponibilite' => 'Disponible',
         'badge' => 'badge-paye',
-        'places' => 15,  
-        'statut' => 'brouillon', 
-        'promotion' => false  
-    ] 
+        'places' => 15,
+        'statut' => 'brouillon',
+        'promotion' => false
+    ]
 ];
 
 

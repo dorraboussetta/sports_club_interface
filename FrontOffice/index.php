@@ -1,3 +1,69 @@
+<?php
+ 
+
+
+$activites = [ 
+    [ 
+        'id' => 1, 
+        'nom' => 'Football',
+        'icon' => '&#9917;',
+        'categorie' => 'Sports de ballon', 
+        'jour' => 'Samedi', 
+        'heure' => '10h00 - 12h00', 
+        'tarif' => '30 EUR', 
+        'Disponibilite' => 'Disponible', 
+        'badge' => 'badge-paye', 
+        'places' => 25,  
+        'statut' => 'publie', 
+        'promotion' => false  
+    ], 
+    [ 
+        'id' => 2, 
+        'nom' => 'Natation',
+        'icon' => '&#127946;',
+        'categorie' => 'Sports aquatiques', 
+        'jour' => 'Mardi et jeudi', 
+        'heure' => '18h00 - 19h30', 
+        'tarif' => '25 EUR', 
+        'Disponibilite' => 'Disponible', 
+        'badge' => 'badge-paye', 
+        'places' => 22,  
+        'statut' => 'publie', 
+        'promotion' => true  
+    ], 
+    [ 
+        'id' => 3, 
+        'nom' => 'Fitness',
+        'icon' => '&#127947;',
+        'categorie' => 'Sport individuel', 
+        'jour' => 'Du lundi au vendredi', 
+        'heure' => '07h00 - 21h00', 
+        'tarif' => '35 EUR', 
+        'Disponibilite' => 'Places limitées', 
+        'badge' => 'badge-attente', 
+        'places' => 15,  
+        'statut' => 'brouillon', 
+        'promotion' => false  
+    ], 
+    [ 
+        'id' => 4, 
+        'nom' => 'Basketball',
+        'icon' => '&#127936;',
+        'categorie' => 'Sports de ballon', 
+        'jour' => 'Mercredi', 
+        'heure' => '16h00 - 18h00', 
+        'tarif' => '30 EUR', 
+        'Disponibilite' => 'Disponible', 
+        'badge' => 'badge-paye',
+        'places' => 15,  
+        'statut' => 'brouillon', 
+        'promotion' => false  
+    ] 
+];
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -34,26 +100,16 @@
 
 
             <div class="grid-cards act-list">
-                <div class="act-card">
-                    <p class="icon">&#9917</p>
-                    <h3>Football</h3>
-                    <p class="muted">Entraînement hebdomadaire</td>
-                    <p class="badge badge-paye">Disponible</p>
-                </div>
-
-                <div class="act-card">
-                    <p class="icon">&#127946</p>
-                    <h3>Natation</h3>
-                    <p class="muted">Cours pour tous les niveaux</p>
-                    <p class="badge badge-paye">Disponible</p>
-                </div class="act-card">
-
-                <div class="act-card">
-                    <p class="icon">&#127947</p>
-                    <h3>Fitness</h3>
-                    <p class="muted">Salle de musculation</p>
-                    <p class="badge badge-attente">Places limitées</p>
-                </div>
+            <?php
+                foreach($activites as $activite) {
+                    echo "<div class='act-card'>"
+                    ."<p class='icon'>{$activite['icon']}</p>"
+                    ."<h3>{$activite['nom']}</h3>"
+                    ."<p class='muted'>{$activite['categorie']}</p>"
+                    ."<p class='badge {$activite['badge']}'>{$activite['Disponibilite']}</p>"
+                    ."</div>"; 
+                }
+            ?>
             </div>
 
 

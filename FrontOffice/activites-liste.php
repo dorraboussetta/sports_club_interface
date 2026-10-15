@@ -1,3 +1,71 @@
+<?php
+
+
+$activites = [
+    [
+        'id' => 1,
+        'nom' => 'Football',
+        'icon' => '&#9917;',
+        'description' => 'Améliorez votre technique, votre endurance et votre esprit d’équipe à travers des entraînements dynamiques et des matchs collectifs.',
+        'categorie' => 'Sports de ballon',
+        'jour' => 'Samedi',
+        'heure' => '10h00 - 12h00',
+        'tarif' => '30 EUR',
+        'Disponibilite' => 'Disponible',
+        'badge' => 'badge-paye',
+        'places' => 25,
+        'statut' => 'publie',
+        'promotion' => false
+    ],
+    [
+        'id' => 2,
+        'nom' => 'Natation',
+        'icon' => '&#127946;',
+        'description' => 'Développez votre endurance et perfectionnez vos techniques de nage grâce à des séances adaptées à différents niveaux.',
+        'categorie' => 'Sports aquatiques',
+        'jour' => 'Mardi et jeudi',
+        'heure' => '18h00 - 19h30',
+        'tarif' => '25 EUR',
+        'Disponibilite' => 'Disponible',
+        'badge' => 'badge-paye',
+        'places' => 22,
+        'statut' => 'publie',
+        'promotion' => true
+    ],
+    [
+        'id' => 3,
+        'nom' => 'Fitness',
+        'icon' => '&#127947;',
+        'description' => 'Renforcez vos muscles, améliorez votre condition physique et gagnez en énergie grâce à des exercices variés et motivants.',
+        'categorie' => 'Sport individuel',
+        'jour' => 'Du lundi au vendredi',
+        'heure' => '07h00 - 21h00',
+        'tarif' => '35 EUR',
+        'Disponibilite' => 'Places limitées',
+        'badge' => 'badge-attente',
+        'places' => 15,
+        'statut' => 'brouillon',
+        'promotion' => false
+    ],
+    [
+        'id' => 4,
+        'nom' => 'Basketball',
+        'icon' => '&#127936;',
+        'description' => 'Perfectionnez vos tirs, vos passes et votre coordination tout en développant votre esprit d’équipe lors de séances collectives.',
+        'categorie' => 'Sports de ballon',
+        'jour' => 'Mercredi',
+        'heure' => '16h00 - 18h00',
+        'tarif' => '30 EUR',
+        'Disponibilite' => 'Disponible',
+        'badge' => 'badge-paye',
+        'places' => 15,
+        'statut' => 'brouillon',
+        'promotion' => false
+    ]
+];
+
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -29,132 +97,40 @@
         <div class="container">
             <h2>Nos activités</h2>
             <div class="act-list-grid">
-                <div class="act-list-card">
-                    <p class="icon">&#9917</p>
-                    <h3>Football</h3>
-                    <p>
-                        Entraînement collectif destiné aux adhérents qui souhaitent pratiquer le football dans une
-                        ambiance
-                        sportive et conviviale.
-                    </p>
-                    <p>
-                        <b>Niveau :</b> Débutant à intermédiaire
-                    </p>
 
-                    <p>
-                        <b>Entraîneur :</b> Coach Ahmed
-                    </p>
+                <?php
+                foreach ($activites as $activite) {
 
-                    <p>
-                        <b>Horaires :</b> Mardi et jeudi, de 18h00 à 19h30
-                    </p>
+                    if ($activite['statut'] == "publie") {
 
-                    <p>
-                        <b>Lieu :</b> Terrain extérieur du club
-                    </p>
+                        if (intval($activite['tarif']) > 30) {
+                            $premium_msg = "<p> <strong> (Premium) </strong> </p>";
+                        } else {
+                            $premium_msg = "";
+                        };
 
-                    <p>
-                        <b>Durée :</b> 1h30 par séance
-                    </p>
+                        if ($activite['promotion']) {
+                            $nom = "{$activite['nom']} <span class='badge badge-accent'>Offre Spéciale</span>";
+                        } else {
+                            $nom = "{$activite['nom']}";
+                        };
 
-                    <p>
-                        <b>Tarif :</b> 40 DT / mois
-                    </p>
-
-                    <p>
-                        <b>Disponibilité :</b> Disponible
-                    </p>
-
-                    <p>
-                        <b>Équipement conseillé :</b> Tenue de sport, chaussures adaptées, et une bouteille d’eau
-                    </p>
+                        echo "<div class='act-list-card'>"
+                            . "<p>{$activite['icon']}</p>"
+                            . "<h3>$nom</h3>"
+                            . "<p>{$activite['description']}</p>"
+                            . "<p> <b>Catégorie:</b> {$activite['categorie']}</p>"
+                            . "<p> <b>Jour:</b>  {$activite['jour']}</p>"
+                            . "<p> <b>Heure:</b> {$activite['heure']}</p>"
+                            . "<p> <b>Tarif:</b> " . number_format((float)$activite['tarif'], 2, ',') . " $premium_msg</p>"
+                            . "<p> <b>Places:</b> {$activite['places']}</p>"
+                            . "<div class='badge-div'> <p class='badge {$activite['badge']}'>{$activite['Disponibilite']}</p></div>"
+                            . "</div>";
+                    }
+                };
 
 
-                </div>
-
-                <div class="act-list-card">
-                    <p class="icon">&#127946</p>
-                    <h3>Natation</h3>
-                    <p>
-                        Cours de natation adaptés à plusieurs niveaux, destinés aussi bien aux débutants qu’aux
-                        personnes
-                        souhaitant améliorer leur technique.
-                    </p>
-
-                    <p>
-                        <b>Niveau :</b> Tous niveaux
-                    </p>
-
-                    <p>
-                        <b>Entraîneur :</b> Coach Sara
-                    </p>
-
-                    <p>
-                        <b>Horaires :</b> Lundi, mercredi et samedi, de 17h00 à 18h00
-                    </p>
-
-                    <p>
-                        <b>Lieu :</b> Piscine du club
-                    </p>
-
-                    <p>
-                        <b>Durée :</b> 1 heure par séance
-                    </p>
-
-                    <p>
-                        <b>Tarif :</b> 50 DT / mois
-                    </p>
-
-                    <p>
-                        <b>Disponibilité :</b> Disponible
-                    </p>
-
-                    <p>
-                        <b>Équipement conseillé :</b> Maillot de bain, bonnet, lunettes de natation et serviette
-                    </p>
-
-                </div>
-
-                <div class="act-list-card">
-                    <p class="icon">&#127947</p>
-                    <h3>Fitness</h3>
-                    <p>
-                        Séances de fitness et de musculation destinées aux adhérents souhaitant améliorer leur condition
-                        physique, leur force et leur endurance.
-                    </p>
-
-                    <p>
-                        <b>Niveau :</b> Débutant à avancé
-                    </p>
-
-                    <p>
-                        <b>Entraîneur :</b> Coach Yasmine
-                    </p>
-
-                    <p>
-                        <b>Horaires :</b> Du lundi au vendredi, de 18h30 à 20h00
-                    </p>
-
-                    <p>
-                        <b>Lieu :</b> Salle de musculation du club
-                    </p>
-
-                    <p>
-                        <b>Durée :</b> 1h30 par séance
-                    </p>
-
-                    <p>
-                        <b>Tarif :</b> 60 DT / mois
-                    </p>
-
-                    <p>
-                        <b>Disponibilité :</b> Places limitées
-                    </p>
-
-                    <p>
-                        <b>Équipement conseillé :</b> Tenue de sport, chaussures de salle, serviette et bouteille d’eau
-                    </p>
-                </div>
+                ?>
             </div>
         </div>
 

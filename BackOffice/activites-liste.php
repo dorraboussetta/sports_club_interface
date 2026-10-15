@@ -100,12 +100,19 @@ $activities = [
 
                     <?php
                     foreach ($activities as $activite) {
+
+                        if (intval($activite['tarif'])>30) {
+                            $tarif = "{$activite['tarif']} <p> <strong> (Premium) </strong> </p>"; 
+                        } else {
+                             $tarif = "{$activite['tarif']}"; 
+                        }; 
+
                         echo "<tr>" 
                         ."<td> {$activite['nom']} </td>"  
                         ."<td> {$activite['categorie']}</td>"
                         ."<td> {$activite['jour']}</td>"
                         ."<td> {$activite['heure']}</td>"
-                        ."<td> {$activite['tarif']}</td>"
+                        ."<td> $tarif</td>"
                         ."<td> <p class='badge {$activite['badge']}'>{$activite['spots']}</p></td>"
                         ."</tr>"; 
                     }; 

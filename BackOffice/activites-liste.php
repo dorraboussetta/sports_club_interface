@@ -138,9 +138,9 @@ $activites = [
                     foreach ($activites as $activite) {
 
                         if (intval($activite['tarif'])>30) {
-                            $tarif = "{$activite['tarif']} <p> <strong> (Premium) </strong> </p>"; 
+                            $premium_msg = "<p> <strong> (Premium) </strong> </p>"; 
                         } else {
-                             $tarif = "{$activite['tarif']}"; 
+                             $premium_msg = ""; 
                         }; 
 
                         if ($activite['promotion']){
@@ -154,7 +154,7 @@ $activites = [
                         ."<td> {$activite['categorie']}</td>"
                         ."<td> {$activite['jour']}</td>"
                         ."<td> {$activite['heure']}</td>"
-                        ."<td> $tarif</td>"
+                        ."<td>" .number_format((float)$activite['tarif'], 2, ',') ." $premium_msg</td>"
                         ."<td> {$activite['places']}</td>"
                         ."<td> <p class='badge {$activite['badge']}'>{$activite['Disponibilite']}</p></td>"
                         ."</tr>"; 

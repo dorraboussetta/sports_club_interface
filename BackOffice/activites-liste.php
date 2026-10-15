@@ -143,8 +143,14 @@ $activites = [
                              $tarif = "{$activite['tarif']}"; 
                         }; 
 
+                        if ($activite['promotion']){
+                            $nom = "{$activite['nom']} <span class='badge badge-accent'>Offre Spéciale</span>"; 
+                        }else {
+                             $nom = "{$activite['nom']}"; 
+                        }; 
+
                         echo "<tr>" 
-                        ."<td> {$activite['nom']} </td>"  
+                        ."<td> $nom </td>"  
                         ."<td> {$activite['categorie']}</td>"
                         ."<td> {$activite['jour']}</td>"
                         ."<td> {$activite['heure']}</td>"

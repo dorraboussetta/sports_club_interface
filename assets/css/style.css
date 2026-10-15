@@ -190,6 +190,11 @@ h3 {
   color: #856404;
 }
 
+.badge-accent{
+  background: var(--color-accent);
+  color: white;
+}
+
 .table-cell-badge {
   margin-top: auto;
   margin-bottom: auto;

@@ -1,3 +1,55 @@
+<?php
+ 
+
+$activities = [ 
+    [ 
+        'id' => 1, 
+        'nom' => 'Football', 
+        'categorie' => 'Sports de ballon', 
+        'jour' => 'Samedi', 
+        'heure' => '10h00 - 12h00', 
+        'tarif' => '30 EUR', 
+        'spots' => 'Disponible', 
+        'badge' => 'badge-paye' 
+    ], 
+    [ 
+        'id' => 2, 
+        'nom' => 'Natation', 
+        'categorie' => 'Sports aquatiques', 
+        'jour' => 'Mardi et jeudi', 
+        'heure' => '18h00 - 19h30', 
+        'tarif' => '25 EUR', 
+        'spots' => 'Disponible', 
+        'badge' => 'badge-paye' 
+    ], 
+    [ 
+        'id' => 3, 
+        'nom' => 'Fitness', 
+        'categorie' => 'Sport individuel', 
+        'jour' => 'Du lundi au vendredi', 
+        'heure' => '07h00 - 21h00', 
+        'tarif' => '35 EUR', 
+        'spots' => 'Places limitées', 
+        'badge' => 'badge-attente' 
+    ], 
+    [ 
+        'id' => 4, 
+        'nom' => 'Basketball', 
+        'categorie' => 'Sports de ballon', 
+        'jour' => 'Mercredi', 
+        'heure' => '16h00 - 18h00', 
+        'tarif' => '30 EUR', 
+        'spots' => 'Disponible', 
+        'badge' => 'badge-paye' 
+    ] 
+];
+
+
+
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -38,61 +90,28 @@
             <div class="container">
                 <table class="table-liste">
                     <tr>
-                        <th>Activité</th>
-                        <th>Résumé</th>
-                        <th>Niveau</th>
-                        <th>Entraîneur</th>
-                        <th>Horaires</th>
-                        <th>Lieu</th>
-                        <th>Durée</th>
+                        <th>Nom</th>
+                        <th>Catégorie</th>
+                        <th>Jour</th>
+                        <th>Heure</th>
                         <th>Tarif</th>
-                        <th>Disponibilité</th>
+                        <th>Spots</th>
                     </tr>
 
-                    <tr>
-                        <td>Football</td>
-                        <td>Sports de ballon</td>
-                        <td>Débutant à intermédiaire</td>
-                        <td>Coach Ahmed</td>
-                        <td>Mardi et jeudi, de 18h00 à 19h30</td>
-                        <td>Terrain extérieur du club</td>
-                        <td>1h30 par séance</td>
-                        <td>40 DT / mois</td>
-                        <td>
-                            <p class="badge badge-paye">Disponible</p>
-                        </td>
+                    <?php
+                    foreach ($activities as $activite) {
+                        echo "<tr>" 
+                        ."<td> {$activite['nom']} </td>"  
+                        ."<td> {$activite['categorie']}</td>"
+                        ."<td> {$activite['jour']}</td>"
+                        ."<td> {$activite['heure']}</td>"
+                        ."<td> {$activite['tarif']}</td>"
+                        ."<td> <p class='badge {$activite['badge']}'>{$activite['spots']}</p></td>"
+                        ."</tr>"; 
+                    }; 
 
-                    </tr>
 
-                    <tr>
-                        <td>Natation</td>
-                        <td>Sports aquatiques</td>
-                        <td>Tous niveaux</td>
-                        <td>Coach Sara</td>
-                        <td>Lundi, mercredi et samedi, de 17h00 à 18h00</td>
-                        <td>Piscine du club</td>
-                        <td>1 heure par séance</td>
-                        <td>50 DT / mois</td>
-                        <td>
-                            <p class="badge badge-paye">Disponible</p>
-                        </td>
-
-                    </tr>
-
-                    <tr>
-                        <td>Fitness</td>
-                        <td>Sport individuel</td>
-                        <td>Débutant à avancé</td>
-                        <td>Coach Yasmine</td>
-                        <td>Du lundi au vendredi, de 18h30 à 20h00</td>
-                        <td>Salle de musculation du club</td>
-                        <td>1h30 par séance</td>
-                        <td>60 DT / mois</td>
-                        <td>
-                            <p class="badge badge-attente">Places limitées</p>
-                        </td>
-
-                    </tr>
+                    ?>
                 </table>
             </div>
 

@@ -7,6 +7,7 @@ $activites = [
         'id' => 1,
         'nom' => 'Football',
         'icon' => '&#9917;',
+        'description' => 'Améliorez votre technique, votre endurance et votre esprit d’équipe à travers des entraînements dynamiques et des matchs collectifs.',
         'categorie' => 'Sports de ballon',
         'jour' => 'Samedi',
         'heure' => '10h00 - 12h00',
@@ -21,6 +22,7 @@ $activites = [
         'id' => 2,
         'nom' => 'Natation',
         'icon' => '&#127946;',
+        'description' => 'Développez votre endurance et perfectionnez vos techniques de nage grâce à des séances adaptées à différents niveaux.',
         'categorie' => 'Sports aquatiques',
         'jour' => 'Mardi et jeudi',
         'heure' => '18h00 - 19h30',
@@ -35,6 +37,7 @@ $activites = [
         'id' => 3,
         'nom' => 'Fitness',
         'icon' => '&#127947;',
+        'description' => 'Renforcez vos muscles, améliorez votre condition physique et gagnez en énergie grâce à des exercices variés et motivants.',
         'categorie' => 'Sport individuel',
         'jour' => 'Du lundi au vendredi',
         'heure' => '07h00 - 21h00',
@@ -49,6 +52,7 @@ $activites = [
         'id' => 4,
         'nom' => 'Basketball',
         'icon' => '&#127936;',
+        'description' => 'Perfectionnez vos tirs, vos passes et votre coordination tout en développant votre esprit d’équipe lors de séances collectives.',
         'categorie' => 'Sports de ballon',
         'jour' => 'Mercredi',
         'heure' => '16h00 - 18h00',
@@ -60,7 +64,6 @@ $activites = [
         'promotion' => false
     ]
 ];
-
 ?>
 
 

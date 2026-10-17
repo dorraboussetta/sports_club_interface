@@ -38,7 +38,7 @@
 
             <div class="form-container">
 
-                <form class="form-card" action="#" method="post">
+                <form class="form-card" action="activite-traitement.php" method="post">
                     <label for="nom">Nom de l'activité </label>
                     <input id="nom" name="nom" type="text" minlength="3" maxlength="50" pattern="[a-zA-Z0-9 ]+" required>
 

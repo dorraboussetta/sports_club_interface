@@ -66,8 +66,8 @@
                         <option value="dimanche">Dimanche</option>
                     </select>
 
-                    <label for="horaire">Horaire</label>
-                    <input id="horaire" name="horaire" type="text" placeholder="HH:MM -- HH:MM"
+                    <label for="heure">heure</label>
+                    <input id="heure" name="heure" type="text" placeholder="HH:MM -- HH:MM"
                         pattern="([01][0-9]|2[0-3]):[0-5][0-9] -- ([01][0-9]|2[0-3]):[0-5][0-9]" required>
 
                     <label for="tarif">Tarif(£/mois)</label>

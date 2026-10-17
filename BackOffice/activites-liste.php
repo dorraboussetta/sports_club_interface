@@ -12,7 +12,7 @@ $activites = [
         'jour' => 'Samedi',
         'heure' => '10h00 - 12h00',
         'tarif' => '30 EUR',
-        'Disponibilite' => 'Disponible',
+        'disponibilite' => 'Disponible',
         'badge' => 'badge-paye',
         'places' => 25,
         'statut' => 'publie',
@@ -27,7 +27,7 @@ $activites = [
         'jour' => 'Mardi et jeudi',
         'heure' => '18h00 - 19h30',
         'tarif' => '25 EUR',
-        'Disponibilite' => 'Disponible',
+        'disponibilite' => 'Disponible',
         'badge' => 'badge-paye',
         'places' => 22,
         'statut' => 'publie',
@@ -42,7 +42,7 @@ $activites = [
         'jour' => 'Du lundi au vendredi',
         'heure' => '07h00 - 21h00',
         'tarif' => '35 EUR',
-        'Disponibilite' => 'Places limitées',
+        'disponibilite' => 'Places limitées',
         'badge' => 'badge-attente',
         'places' => 15,
         'statut' => 'brouillon',
@@ -57,7 +57,7 @@ $activites = [
         'jour' => 'Mercredi',
         'heure' => '16h00 - 18h00',
         'tarif' => '30 EUR',
-        'Disponibilite' => 'Disponible',
+        'disponibilite' => 'Disponible',
         'badge' => 'badge-paye',
         'places' => 15,
         'statut' => 'brouillon',
@@ -166,7 +166,7 @@ $activites = [
                         ."<td> {$activite['heure']}</td>"
                         ."<td>" .number_format((float)$activite['tarif'], 2, ',') ." $premium_msg</td>"
                         ."<td> {$activite['places']}</td>"
-                        ."<td> <p class='badge {$activite['badge']}'>{$activite['Disponibilite']}</p></td>"
+                        ."<td> <p class='badge {$activite['badge']}'>{$activite['disponibilite']}</p></td>"
                         ."</tr>"; 
                     }; 
 

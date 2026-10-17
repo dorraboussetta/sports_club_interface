@@ -294,6 +294,10 @@ h3 {
   box-shadow: 0 0 0 3px rgba(11, 94, 215, 0.15);
 }
 
+.form-card input[type="checkbox"]{
+  cursor: pointer; 
+}
+
 .form-btn-div button,
 .form-btn-div a {
   margin: 0px 5px 5px 5px;

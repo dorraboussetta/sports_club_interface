@@ -68,13 +68,13 @@
 
                     <label for="horaire">Horaire</label>
                     <input id="horaire" name="horaire" type="text" placeholder="HH:MM -- HH:MM"
-                        pattern="([01][0-9]|2[0-3]):[0-5][0-9] -- ([01][0-9]|2[0-3]):[0-5][0-9]">
+                        pattern="([01][0-9]|2[0-3]):[0-5][0-9] -- ([01][0-9]|2[0-3]):[0-5][0-9]" required>
 
                     <label for="tarif">Tarif(£/mois)</label>
-                    <input id="tarif" name="tarif" type="number">
+                    <input id="tarif" name="tarif" type="number" required>
 
                     <label for="places">Nombre de places</label>
-                    <input id="places" name="places" type="number" min="1" max="200" step="1">
+                    <input id="places" name="places" type="number" min="1" max="200" step="1" required>
 
                     <label for="statut">Statut de publication</label>
                     <select id="statut" name="statut" required>
@@ -95,6 +95,9 @@
                         <option value="badge-paye">badge-paye</option>
                         <option value="badge-attente">badge-attente</option>
                     </select>
+
+                    <label for="icon">Nombre de places</label>
+                    <input id="icon" name="icon" type="text" required>
 
                     <label>
                         <input type="checkbox" id="promotion" name="promotion" value="1"> Activité en promotion

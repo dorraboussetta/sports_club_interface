@@ -42,6 +42,9 @@
                     <label for="nom">Nom de l'activité </label>
                     <input id="nom" name="nom" type="text" minlength="3" maxlength="50" pattern="[a-zA-Z0-9 ]+" required>
 
+                    <label for="icon">Icon</label>
+                    <input id="icon" name="icon" type="text" minlength="3" maxlength="50" pattern="&[#0-9a-zA-Z]+;" required>
+
                     <label for="categorie">Catégorie </label>
                     <select name="categorie" id="categorie" required>
                         <option value="">-- choisir -- </option>

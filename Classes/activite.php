@@ -92,10 +92,10 @@ class Activite
     }
 
     public function __get(string $propriete)
-    {   
+    {
         if ($propriete == "id") {
-            throw new Exception("Accès non autorisé."); 
-        }; 
+            throw new Exception("Accès non autorisé.");
+        };
         return $this->$propriete;
     }
 
@@ -109,7 +109,8 @@ class Activite
         } else {
             $premium_msg = "";
         };
-        echo "<div class='act-list-card'>"
+        echo "<div class='container'>"
+            . "<div class='act-list-card'>"
             . "<p>{$this->icon}</p>"
             . "<h3>{$this->nom}</h3>"
             . "<p>{$this->description}</p>"
@@ -120,7 +121,8 @@ class Activite
             . "<p> <b>Places:</b> {$this->places}</p>"
             . "<div class='badge-div'> <p class='badge {$this->badge}'>{$this->disponibilite}</p></div>"
             . "<p><b>Liste d'adhérents inscrits: </b> <br><ul> <li>3671</li> <li>4829</li> </ul></p>"
-            . "<div class='form-btn-div'> <a href='#' class='btn btn-primary'>Modifier</a> <a href='#' class='btn btn-danger'>Supprimer</a>"
+            . "<div class=''> <a href='#' class='btn btn-primary'>Modifier</a> <a href='#' class='btn btn-danger'>Supprimer</a>"
+            . "</div>"
             . "</div>"
             . "</div>";
     }

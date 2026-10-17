@@ -96,13 +96,9 @@
                         <option value="badge-attente">badge-attente</option>
                     </select>
 
-                    <label for="icon">Nombre de places</label>
-                    <input id="icon" name="icon" type="text" required>
+                    <label>Activité en promotion (Offre Spécial)</label>
+                    <input type="checkbox" id="promotion" name="promotion" value="1">
 
-                    <label>
-                        <input type="checkbox" id="promotion" name="promotion" value="1"> Activité en promotion
-                        (Offre Spécial)
-                    </label>
 
                     <div class="form-btn-div">
                         <button type="submit" class="btn btn-primary">Enregistrer</button>
